@@ -1,0 +1,12 @@
+class People:
+    def __init__(self, first_last_name, age, phone_number, home_address, work_place):
+        self.name = first_last_name
+        self.age = age
+        self.phonenumber = phone_number
+        self.address = home_address
+        self.work = work_place
+class Work_Place:
+    def __init__(self, first_last_name, address_of_organistaion, work_place):
+        self.name = first_last_name
+        self.address = address_of_organistaion
+        self.work = work_place
