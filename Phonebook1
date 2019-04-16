@@ -1,0 +1,68 @@
+from settings import People, Work_Place
+access_name = input(str('Please enter first and last name'))
+
+person1 = People('Andrew Price', 30, +13472105630, '1st street', 'Starbucks')
+person2 = People('Ashley Smith', 31, +16464610414, '2nd street', 'Cashscan')
+person3 = People('Bryan Cox', 30, +17085781311, '3rd street', 'Cashscan')
+person4 = People('Don Jones', 32, +19075143511, '4th street', 'Cashscan')
+person5 = People('Jonnathan Wilcox', 31, +13476984290, '5th street', 'Cashscan')
+person6 = People('Kevin Pisle', 32, +16461234579, '6th street', 'Cashscan')
+person7 = People('Nickolas Randall', 33, +19174567811, '7th street', 'Cashscan')
+person8 = People('Peter Green', 30, +16145897511, '8th street', 'Cashscan')
+person9 = People('Tony Stark', 31, +15417896531, '9th street', 'Cashscan')
+person10 = People('William Clark', 31, +16465671311, '10th street', 'Starbucks')
+
+lst_of_people = [person1, person2, person3, person4, person5, person6, person7, person8, person9, person10]
+for a in lst_of_people:
+    if access_name == 'Andrew Price':
+        print(person1.__dict__)
+        break
+    elif access_name == 'Ashley Smith':
+        print(person2.__dict__)
+        break
+    elif access_name == 'Brian Cox':
+        print(person3.__dict__)
+        break
+    elif access_name == 'Don Jones':
+        print(person4.__dict__)
+        break
+    elif access_name == 'Jonnathan Wilcox':
+        print(person5.__dict__)
+        break
+    elif access_name == 'Kevin Pisle':
+        print(person6.__dict__)
+        break
+    elif access_name == 'Nickolas Randall':
+        print(person7.__dict__)
+        break
+    elif access_name == 'Peter Green':
+        print(person8.__dict__)
+        break
+    elif access_name == 'Tony Stark':
+        print(person9.__dict__)
+        break
+    elif access_name == 'William Clark':
+        print(person10.__dict__)
+        break
+
+    else:
+        print('***Person is not found***')
+        break
+
+person1 = Work_Place('Andrew Price', '11th street', 'Starbucks')
+person2 = Work_Place('Ashley Smith', '11th street', 'Cashscan')
+person3 = Work_Place('Bryan Cox', '11th street', 'Cashscan')
+person4 = Work_Place('Don Jones', '11th street', 'Cashscan')
+person5 = Work_Place('Jonnathan Wilcox', '11th street', 'Cashscan')
+person6 = Work_Place('Kevin Pisle', '11th street', 'Cashscan')
+person7 = Work_Place('Nickolas Randall','11th street', 'Cashscan')
+person8 = Work_Place('Peter Green','11th street', 'Cashscan')
+person9 = Work_Place('Tony Stark','11th street', 'Cashscan')
+person10 = Work_Place('William Clark','11th street', 'Starbucks')
+
+access_organisation = input(str('Please enter the name of organistion'))
+
+lst_of_people1 = [person1, person2, person3, person4, person5, person6, person7, person8, person9, person10]
+for Work_Place in lst_of_people1:
+    if access_organisation == Work_Place.work:
+        print(Work_Place.name)
