@@ -17,6 +17,9 @@ lst_of_people = [person1, person2, person3, person4, person5, person6, person7, 
 for People in lst_of_people:
     if access_name == People.name:
         print(People.__dict__)
+    else:
+        print('***Person is not found***')
+        break    
 
 person1 = Work_Place('Andrew Price', '11th street', 'Starbucks')
 person2 = Work_Place('Ashley Smith', '11th street', 'Cashscan')
@@ -35,3 +38,6 @@ lst_of_people1 = [person1, person2, person3, person4, person5, person6, person7,
 for Work_Place in lst_of_people1:
     if access_organisation == Work_Place.work:
         print(Work_Place.name)
+    else:
+        print('***Organisation is not found***')
+        break    
