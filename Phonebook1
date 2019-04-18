@@ -1,4 +1,5 @@
 from settings import People, Work_Place
+
 access_name = input(str('Please enter first and last name'))
 
 person1 = People('Andrew Price', 30, +13472105630, '1st street', 'Starbucks')
@@ -13,41 +14,9 @@ person9 = People('Tony Stark', 31, +15417896531, '9th street', 'Cashscan')
 person10 = People('William Clark', 31, +16465671311, '10th street', 'Starbucks')
 
 lst_of_people = [person1, person2, person3, person4, person5, person6, person7, person8, person9, person10]
-for a in lst_of_people:
-    if access_name == 'Andrew Price':
-        print(person1.__dict__)
-        break
-    elif access_name == 'Ashley Smith':
-        print(person2.__dict__)
-        break
-    elif access_name == 'Brian Cox':
-        print(person3.__dict__)
-        break
-    elif access_name == 'Don Jones':
-        print(person4.__dict__)
-        break
-    elif access_name == 'Jonnathan Wilcox':
-        print(person5.__dict__)
-        break
-    elif access_name == 'Kevin Pisle':
-        print(person6.__dict__)
-        break
-    elif access_name == 'Nickolas Randall':
-        print(person7.__dict__)
-        break
-    elif access_name == 'Peter Green':
-        print(person8.__dict__)
-        break
-    elif access_name == 'Tony Stark':
-        print(person9.__dict__)
-        break
-    elif access_name == 'William Clark':
-        print(person10.__dict__)
-        break
-
-    else:
-        print('***Person is not found***')
-        break
+for People in lst_of_people:
+    if access_name == People.name:
+        print(People.__dict__)
 
 person1 = Work_Place('Andrew Price', '11th street', 'Starbucks')
 person2 = Work_Place('Ashley Smith', '11th street', 'Cashscan')
